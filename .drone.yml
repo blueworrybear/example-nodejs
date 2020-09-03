@@ -1,0 +1,15 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: install
+    image: node
+    commands:
+      - cd mocha_instanbul
+      - npm install
+  - name: test
+    image: node
+    commands:
+      - cd mocha_instanbul
+      - npm test
