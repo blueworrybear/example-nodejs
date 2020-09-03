@@ -14,7 +14,7 @@ steps:
       - cd mocha_instanbul
       - npm test
   - name: upload
-    image: covergates/drone-covergates:0.0.1
+    image: covergates/drone-covergates
     settings:
       report_id: bt9huh223akg00dkqseg
       report: ./coverage/lcov.info
