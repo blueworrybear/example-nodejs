@@ -19,3 +19,7 @@ steps:
       report_id: bt9huh223akg00dkqseg
       report: ./coverage/lcov.info
       type: lcov
+      comment: true
+    when:
+      event:
+        - pull_request
